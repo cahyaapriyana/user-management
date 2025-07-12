@@ -24,6 +24,10 @@ class UsersList extends Component
         $this->resetPage();
     }
 
+    public function placeholder()
+    {
+        return view('livewire.placeholder.skeleton');
+    }
 
     public function render()
     {
