@@ -18,7 +18,7 @@
   </form>
   
     <ul role="list" class="divide-y divide-gray-100">
-      @foreach ($users as $user )
+      @foreach ($this->users as $user )
         
       <li class="flex justify-between gap-x-6 py-5">
         <div class="flex min-w-0 gap-x-4">
@@ -35,5 +35,5 @@
       @endforeach
   
     </ul>
-    {{ $users->links() }}
+    {{ $this->users->links() }}
   </div>
